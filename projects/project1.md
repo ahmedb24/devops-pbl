@@ -16,7 +16,7 @@ You can watch the videos below to learn how to Provision a server and connect to
 - [Connecting to your EC2 Instance](https://www.youtube.com/watch?v=TxT6PNJts-s&list=PLtPuNR8I4TvkwU7Zu0l0G_uwtSUXLckvh&index=7)    
 <br>
 
-![instance running](screenshots/project1/instance_running.jpg)
+![instance running](../screenshots/project1/instance_running.jpg)
 *EC2 machine in running state*  
 <br>
 
@@ -49,14 +49,14 @@ Install Apache using Ubuntu’s package manager ‘*apt*’:
 >`sudo systemctl status apache2`  
 <br>          
 
-<br>![apache2 running](screenshots/project1/apache2_running.jpg)
+<br>![apache2 running](../screenshots/project1/apache2_running.jpg)
 *Verifying apache2 is running*  
 <br>
 
 Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use 
 <br>to access web pages on the Internet   
 
-<br>![Opened port 80](screenshots/project1/open_port_80.jpg)
+<br>![Opened port 80](../screenshots/project1/open_port_80.jpg)
 *Opened port 80*  
 
 <br>Now it is time for us to test how our Apache HTTP server can respond to requests from the Internet.
@@ -64,7 +64,7 @@ Before we can receive any traffic by our Web Server, we need to open TCP port 80
 >`http://<Public-IP-Address>:80`
 
 <br>If you see following page, then your web server is now correctly installed and accessible through your firewall.
-<br>![Apache2 default page](screenshots/project1/apache2_default_page.jpg)
+<br>![Apache2 default page](../screenshots/project1/apache2_default_page.jpg)
 <br>*Apache2 default page*   
 <br>
 
@@ -78,7 +78,7 @@ Again, use ‘apt’ to acquire and install this software:
 >`sudo apt install mysql-server`  
 <br>       
 
-<br>![mysql running](screenshots/project1/mysql_running.jpg)
+<br>![mysql running](../screenshots/project1/mysql_running.jpg)
 <br>*Verifying MYSQL is running*   
 <br>
 
@@ -127,7 +127,7 @@ To install these 3 packages at once, run:
 #Confirm php is installed
 <br>`php -v`   
 
-<br>![php running](screenshots/project1/php_running.jpg)
+<br>![php running](../screenshots/project1/php_running.jpg)
 <br>*Verifying PHP is installed*   
 <br>   
 
@@ -153,7 +153,7 @@ Create directory and assign ownership of the directory with your current system 
 Then, create and add configuration settings to a new configuration file in Apache’s sites-available directory using your preferred command-line editor:   
 >`sudo vi /etc/apache2/sites-available/projectlamp.conf`
 
-<br>![config created](screenshots/project1/config_created.jpg)
+<br>![config created](../screenshots/project1/config_created.jpg)
 <br>*Verifying porjectlamp config creation*   
 <br>   
 
@@ -177,7 +177,7 @@ You might want to disable the default website that comes installed with Apache. 
 >`sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`   
 <br>
 
-<br>![virtualhost running](screenshots/project1/virtualhost_running.jpg)
+<br>![virtualhost running](../screenshots/project1/virtualhost_running.jpg)
 <br>*Verifying virtual host is serving projectlamp*   
 <br>   
 
@@ -200,7 +200,7 @@ Create a new file named index.php inside your custom web root folder and add the
 <br>`phpinfo();`   
 <br>
 
-<br>![virtualhost with php running](screenshots/project1/virtualhost_with_php_running.jpg)
+<br>![virtualhost with php running](../screenshots/project1/virtualhost_with_php_running.jpg)
 <br>*Verifying virtualhost with php*   
 <br>   
 
