@@ -1,6 +1,6 @@
 # **WEB STACK IMPLEMENTATION (LAMP STACK) IN AWS**
-LAMP web stack is a type of technology stack that combines a set of frameworks and tools specifically chosen 
-<br>to work together and used to develop a software product.  
+LAMP web stack is a technology stack that combines a set of frameworks and tools specifically chosen to work 
+<br>together and used to develop a software product.  
 <br>
 
 # **Step 1 - Preparing prerequisites** 
