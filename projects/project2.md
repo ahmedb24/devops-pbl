@@ -239,19 +239,15 @@ We will create a database named example_database and a user named example_user, 
 <br>   
 
 >#Connect to the MySQL console using the root account 
-<br>`sudo mysql`
-<br>   
-#Create a new database
-<br>`CREATE DATABASE `example_database`;`
-<br>   
-#Create a new user named example_user, using mysql_native_password as default authentication method
-<br>`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
-<br>   
-#Give this user permission over the example_database database
-<br>`GRANT ALL ON example_database.* TO 'example_user'@'%';`
-<br>   
-#Exit the MySQL shell
-<br>`exit`   
+<br>`sudo mysql`   
+<br>#Create a new database   
+`CREATE DATABASE `example_database`;`   
+<br>#Create a new user named example_user, using mysql_native_password as default authentication method   
+`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`   
+<br>#Give this user permission over the example_database database   
+`GRANT ALL ON example_database.* TO 'example_user'@'%';`   
+<br>#Exit the MySQL shell   
+`exit`   
 
 <br>You can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials
 >`mysql -u example_user -p`   
