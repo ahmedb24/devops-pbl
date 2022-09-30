@@ -184,16 +184,13 @@ server {
 We would need to activate the configuration by linking to the config file from Nginx’s sites-enabled directory and also disable default Nginx host that 
 <br>is currently configured to listen on port 80, for this run: 
 > #Activate config
-<br>`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
-<br>
-<br>#Disable default Nginx host
-<br>`sudo unlink /etc/nginx/sites-enabled/default`
-<br>
-<br>#Test configuration for syntax errors
-<br>`sudo nginx -t`
-<br>
-<br>#Reload Nginx
-<br>`sudo systemctl reload nginx`  
+<br>`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`   
+<br>#Disable default Nginx host   
+`sudo unlink /etc/nginx/sites-enabled/default`   
+<br>#Test configuration for syntax errors   
+`sudo nginx -t`   
+<br>#Reload Nginx   
+`sudo systemctl reload nginx`  
 
 <br>Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your 
 <br>new server block works as expected:   
@@ -283,7 +280,7 @@ Next, we’ll create a test table named todo_list. From the MySQL console, run t
 
 Now you can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root 
 <br>directory using your preferred editor. We’ll use vi for that:
->nano /var/www/projectLEMP/todo_list.php   
+>`nano /var/www/projectLEMP/todo_list.php`   
 
 <br>The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list.
 <br>If there is a problem with the database connection, it will throw an exception.
