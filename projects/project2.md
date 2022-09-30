@@ -32,11 +32,10 @@ Since this is our first time using apt for this session, start off by updating y
 <br>apt install to get Nginx installed:
 <br>   
 
-> #update a list of packages in package manager
-<br>`sudo apt update`
-<br>
-<br>#run nginx package installation
-<br>`sudo apt install nginx`   
+> #Update a list of packages in package manager
+<br>`sudo apt update`   
+<br>#Run nginx package installation   
+`sudo apt install nginx`   
 
 <br>To verify that nginx is running as a Service in our OS, use the following command:
 >`sudo systemctl status nginx`  
@@ -82,12 +81,10 @@ Again, use ‘apt’ to acquire and install this software:
 
 >#Login to mysql as root
 <br>`sudo mysql`  
-<br>
-#Change password
-<br>`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`;
-<br>   
-#exit the console
-<br>`exit`
+<br>#Change password   
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`;   
+<br>#exit the console   
+`exit`
 <br>  
 
 <br>Start the interactive script by running:
@@ -192,8 +189,7 @@ We would need to activate the configuration by linking to the config file from N
 <br>#Reload Nginx   
 `sudo systemctl reload nginx`  
 
-<br>Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your 
-<br>new server block works as expected:   
+<br>Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your new server block works as expected:   
 
 >`sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`
 <br>   
@@ -202,8 +198,7 @@ We would need to activate the configuration by linking to the config file from N
 <br>*Verifying nginx is serving projectlemp*   
 <br>
 
-Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your 
-<br>newly configured website.   
+Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.   
 <br>
 
 # **STEP 6 — TESTING PHP WITH NGINX** 
