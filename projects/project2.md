@@ -178,8 +178,7 @@ server {
 <br>*Verifying porjectlemp config creation*   
 <br>   
 
-We would need to activate the configuration by linking to the config file from Nginx’s sites-enabled directory and also disable default Nginx host that 
-<br>is currently configured to listen on port 80, for this run: 
+We would need to activate the configuration by linking to the config file from Nginx’s sites-enabled directory and also disable default Nginx host that is currently configured to listen on port 80, for this run: 
 > #Activate config
 <br>`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`   
 <br>#Disable default Nginx host   
