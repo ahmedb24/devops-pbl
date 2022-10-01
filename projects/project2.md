@@ -22,8 +22,7 @@ Let us move on and configure our EC2 machine to serve a Web server!
 <br>
 
 # **STEP 2 — INSTALLING THE NGINX WEB SERVER AND UPDATING THE FIREWALL** 
-In order to display web pages to our site visitors, we are going to employ Nginx, a high-performance web server. We’ll use the 
-<br>apt package manager to install this package.   
+In order to display web pages to our site visitors, we are going to employ Nginx, a high-performance web server. We’ll use the apt package manager to install this package.   
 <br>
 
 Since this is our first time using apt for this session, start off by updating your server’s package index. Following that, you can use
@@ -43,8 +42,7 @@ Since this is our first time using apt for this session, start off by updating y
 *Verifying nginx is running* 
 <br>
 
-Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use 
-<br>to access web pages on the Internet   
+Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use to access web pages on the Internet   
 
 <br>![Opened port 80](../screenshots/project2/open_port_80.jpg)
 *Opened port 80*  
@@ -59,9 +57,7 @@ Before we can receive any traffic by our Web Server, we need to open TCP port 80
 <br>
 
 # **STEP 3 — INSTALLING MYSQL** 
-Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage 
-<br>data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, 
-<br>so we will use it in our project.  
+Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.  
 <br>
   
 Again, use ‘apt’ to acquire and install this software:   
@@ -72,9 +68,7 @@ Again, use ‘apt’ to acquire and install this software:
 <br>*Verifying MYSQL is running*   
 <br>
 
-<br>It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings 
-<br>and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password 
-<br>as default authentication method. We’re defining this user’s password as PassWord.1.   
+<br>It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.   
 <br>
 
 >#Login to mysql as root
