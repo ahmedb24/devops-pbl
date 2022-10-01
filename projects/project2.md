@@ -1,14 +1,12 @@
 # **WEB STACK IMPLEMENTATION (LEMP STACK) IN AWS**
-LEMP web stack is a technology stack that combines a set of frameworks and tools specifically chosen to work 
-<br>together and used to develop a software product.  
+LEMP web stack is a technology stack that combines a set of frameworks and tools specifically chosen to work together and used to develop a software product.  
 <br>
 
 # **Step 1 - Preparing prerequisites** 
 In order to complete this project, an AWS account and a virtual server with Ubuntu Server OS is required.  
 <br>
 
-Creation of a new AWS account gives access to the free tier plan which allows to spin up a new EC2 instance
-<br>(an instance of a virtual server) for free in only a matter of a few clicks.  
+Creation of a new AWS account gives access to the free tier plan which allows to spin up a new EC2 instance (an instance of a virtual server) for free in only a matter of a few clicks.  
 <br>
 
 You can watch the videos below to learn how to Provision a server and connect to it.
