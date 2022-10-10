@@ -200,8 +200,8 @@ You can do this by creating a test PHP file in your document root. Open a new fi
 <br>`sudo nano /var/www/projectlemp/info.php`
 <br>   
 #File content   
-`<?php   
-phpinfo();`   
+<?php   
+phpinfo();
 
 <br>You can access the web page via the browser and will see detailed information about your server:
 
