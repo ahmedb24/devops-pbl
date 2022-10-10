@@ -203,7 +203,8 @@ You can do this by creating a test PHP file in your document root. Open a new fi
 #File content   
 <?php   
 phpinfo();
-```
+```   
+
 <br>You can access the web page via the browser and will see detailed information about your server:
 
 <br>![nginx with php running](../screenshots/project2/nginx_with_php_running.jpg)
