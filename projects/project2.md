@@ -199,9 +199,9 @@ You can do this by creating a test PHP file in your document root. Open a new fi
 >#create info.php
 <br>`sudo nano /var/www/projectlemp/info.php`
 <br>
-<br>#File content
-<br>`<?php`
-<br>`phpinfo();`   
+>#File content   
+`<?php`   
+`phpinfo();`   
 
 <br>You can access the web page via the browser and will see detailed information about your server:
 
