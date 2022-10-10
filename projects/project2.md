@@ -198,10 +198,10 @@ You can test the LEMP stack to validate that Nginx can correctly hand .php files
 You can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor: 
 >#create info.php
 <br>`sudo nano /var/www/projectlemp/info.php`
-<br>
->#File content   
-`<?php`   
-`phpinfo();`   
+<br>   
+#File content   
+`<?php   
+phpinfo();`   
 
 <br>You can access the web page via the browser and will see detailed information about your server:
 
