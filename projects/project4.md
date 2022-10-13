@@ -48,12 +48,15 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 # **Step 3 - Install MongoDB**
 MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.
 <br>
->`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`   
 
->`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
+>#Run   
+`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`   
+
+>#Run   
+`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
 
 >#Install MongoDB   
->sudo apt install -y mongodb
+>`sudo apt install -y mongodb`
 >
 >#Start the server   
 >`sudo service mongodb start`   
@@ -101,12 +104,12 @@ Express is a minimal and flexible Node.js web application framework that provide
 We also will use Mongoose package which provides a straight-forward, schema-based solution to model your application data. We will use Mongoose to establish a schema for the database to store data of our book register.
 
 >`sudo npm install express mongoose`   
-<br>
-#In ‘Books’ folder, create a folder named apps   
-`mkdir apps && cd apps`   
-<br>
-#Create a file named routes.js   
-`vi routes.js`
+><br>
+>#In ‘Books’ folder, create a folder named apps   
+>`mkdir apps && cd apps`   
+><br>
+>#Create a file named routes.js   
+>`vi routes.js`
 
 <br>![express installed](../screenshots/project4/express_installed.jpg)
 *Express and mongoose installed*  
