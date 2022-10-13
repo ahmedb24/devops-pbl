@@ -48,29 +48,33 @@ Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.j
 # **Step 3 - Install MongoDB**
 MongoDB stores data in flexible, JSON-like documents. Fields in a database can vary from document to document and data structure can be changed over time. For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.
 <br>
->`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`   
-`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`   
-<br>
-#Install MongoDB   
-`sudo apt install -y mongodb`   
-<br>
-#Start the server   
-`sudo service mongodb start`   
-<br>
-#Verify that the service is up and running   
-`sudo systemctl status mongodb`   
-<br>
-#Create a folder named ‘Books’   
-`mkdir Books && cd Books`   
-<br>
-#In the Books directory, Initialize npm project   
-`npm init`   
-<br>
-#We need ‘body-parser’ package to help us process JSON files passed in requests to the server.   
-`sudo npm install body-parser`   
-<br>
-#Add a file to it named server.js   
-`vi server.js`
+
+>#Run   
+`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`   
+
+>#Run   
+`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
+
+>#Install MongoDB   
+>`sudo apt install -y mongodb`
+>
+>#Start the server   
+>`sudo service mongodb start`   
+>
+>#Verify that the service is up and running   
+>`sudo systemctl status mongodb`   
+><br>
+>#Create a folder named ‘Books’   
+>`mkdir Books && cd Books`   
+><br>
+>#In the Books directory, Initialize npm project   
+>`npm init`   
+><br>
+>#We need ‘body-parser’ package to help us process JSON files passed in requests to the server.   
+>`sudo npm install body-parser`   
+><br>
+>#Add a file to it named server.js   
+>`vi server.js`
 
 ```
 #Copy and paste the web server code below into the server.js file.
@@ -100,12 +104,12 @@ Express is a minimal and flexible Node.js web application framework that provide
 We also will use Mongoose package which provides a straight-forward, schema-based solution to model your application data. We will use Mongoose to establish a schema for the database to store data of our book register.
 
 >`sudo npm install express mongoose`   
-<br>
-#In ‘Books’ folder, create a folder named apps   
-`mkdir apps && cd apps`   
-<br>
-#Create a file named routes.js   
-`vi routes.js`
+><br>
+>#In ‘Books’ folder, create a folder named apps   
+>`mkdir apps && cd apps`   
+><br>
+>#Create a file named routes.js   
+>`vi routes.js`
 
 <br>![express installed](../screenshots/project4/express_installed.jpg)
 *Express and mongoose installed*  
@@ -153,10 +157,10 @@ module.exports = function(app) {
 <br>
 
 >In the ‘apps’ folder, create a folder named models   
-`mkdir models && cd models`   
-<br>
-Create a file named book.js   
-`vi book.js`
+>`mkdir models && cd models`   
+><br>
+>Create a file named book.js   
+>`vi book.js`
 ```
 #Copy and paste the code below into ‘book.js’
 var mongoose = require('mongoose');
@@ -178,13 +182,13 @@ module.exports = mongoose.model('Book', bookSchema);
 AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
 
 >#Change the directory back to ‘Books’   
-`cd ../..`   
-<br>
-#Create a folder named public   
-`mkdir public && cd public`   
-<br>
-#Add a file named script.js   
-`vi script.js`   
+>`cd ../..`   
+><br>
+>#Create a folder named public   
+>`mkdir public && cd public`   
+><br>
+>#Add a file named script.js   
+>`vi script.js`   
 ```
 #Copy and paste the Code below (controller configuration defined) into the script.js file.
 var app = angular.module('myApp', []);
@@ -286,10 +290,10 @@ app.controller('myCtrl', function($scope, $http) {
 <br>
 
 >#Change the directory back up to Books   
-`cd ..`   
-<br>
-Start the server by running this command:   
-`node server.js`   
+>`cd ..`   
+><br>
+>Start the server by running this command:   
+>`node server.js`   
 
 <br>
 
@@ -297,6 +301,7 @@ The server is now up and running, we can connect it via port 3300. You can launc
 >curl -s http://localhost:3300   
 
 It shall return an HTML page, it is hardly readable in the CLI, but we can also try and access it from the Internet.   
+<br>
 For this – you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
 
 <br>![Opened port 3300](../screenshots/project4/opened_port_3300.jpg)
