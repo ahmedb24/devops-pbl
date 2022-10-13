@@ -53,7 +53,7 @@ MongoDB stores data in flexible, JSON-like documents. Fields in a database can v
 >`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
 
 >#Install MongoDB   
-`sudo apt install -y mongodb`   
+`sudo apt install -y mongodb`
 <br>
 #Start the server   
 `sudo service mongodb start`   
