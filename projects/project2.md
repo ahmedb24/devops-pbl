@@ -1,14 +1,12 @@
 # **WEB STACK IMPLEMENTATION (LEMP STACK) IN AWS**
-LEMP web stack is a technology stack that combines a set of frameworks and tools specifically chosen to work 
-<br>together and used to develop a software product.  
+LEMP web stack is a technology stack that combines a set of frameworks and tools specifically chosen to work together and used to develop a software product.  
 <br>
 
 # **Step 1 - Preparing prerequisites** 
 In order to complete this project, an AWS account and a virtual server with Ubuntu Server OS is required.  
 <br>
 
-Creation of a new AWS account gives access to the free tier plan which allows to spin up a new EC2 instance
-<br>(an instance of a virtual server) for free in only a matter of a few clicks.  
+Creation of a new AWS account gives access to the free tier plan which allows to spin up a new EC2 instance (an instance of a virtual server) for free in only a matter of a few clicks.  
 <br>
 
 You can watch the videos below to learn how to Provision a server and connect to it.
@@ -24,19 +22,17 @@ Let us move on and configure our EC2 machine to serve a Web server!
 <br>
 
 # **STEP 2 — INSTALLING THE NGINX WEB SERVER AND UPDATING THE FIREWALL** 
-In order to display web pages to our site visitors, we are going to employ Nginx, a high-performance web server. We’ll use the 
-<br>apt package manager to install this package.   
+In order to display web pages to our site visitors, we are going to employ Nginx, a high-performance web server. We’ll use the apt package manager to install this package.   
 <br>
 
 Since this is our first time using apt for this session, start off by updating your server’s package index. Following that, you can use
 <br>apt install to get Nginx installed:
 <br>   
 
-> #update a list of packages in package manager
-<br>`sudo apt update`
-<br>
-<br>#run nginx package installation
-<br>`sudo apt install nginx`   
+> #Update a list of packages in package manager
+<br>`sudo apt update`   
+<br>#Run nginx package installation   
+`sudo apt install nginx`   
 
 <br>To verify that nginx is running as a Service in our OS, use the following command:
 >`sudo systemctl status nginx`  
@@ -46,8 +42,7 @@ Since this is our first time using apt for this session, start off by updating y
 *Verifying nginx is running* 
 <br>
 
-Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use 
-<br>to access web pages on the Internet   
+Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use to access web pages on the Internet   
 
 <br>![Opened port 80](../screenshots/project2/open_port_80.jpg)
 *Opened port 80*  
@@ -62,9 +57,7 @@ Before we can receive any traffic by our Web Server, we need to open TCP port 80
 <br>
 
 # **STEP 3 — INSTALLING MYSQL** 
-Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage 
-<br>data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, 
-<br>so we will use it in our project.  
+Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.  
 <br>
   
 Again, use ‘apt’ to acquire and install this software:   
@@ -75,19 +68,15 @@ Again, use ‘apt’ to acquire and install this software:
 <br>*Verifying MYSQL is running*   
 <br>
 
-<br>It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings 
-<br>and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password 
-<br>as default authentication method. We’re defining this user’s password as PassWord.1.   
+<br>It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.   
 <br>
 
 >#Login to mysql as root
 <br>`sudo mysql`  
-<br>
-#Change password
-<br>`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`;
-<br>   
-#exit the console
-<br>`exit`
+<br>#Change password   
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`;   
+<br>#exit the console   
+`exit`
 <br>  
 
 <br>Start the interactive script by running:
@@ -181,22 +170,17 @@ server {
 <br>*Verifying porjectlemp config creation*   
 <br>   
 
-We would need to activate the configuration by linking to the config file from Nginx’s sites-enabled directory and also disable default Nginx host that 
-<br>is currently configured to listen on port 80, for this run: 
+We would need to activate the configuration by linking to the config file from Nginx’s sites-enabled directory and also disable default Nginx host that is currently configured to listen on port 80, for this run: 
 > #Activate config
-<br>`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
-<br>
-<br>#Disable default Nginx host
-<br>`sudo unlink /etc/nginx/sites-enabled/default`
-<br>
-<br>#Test configuration for syntax errors
-<br>`sudo nginx -t`
-<br>
-<br>#Reload Nginx
-<br>`sudo systemctl reload nginx`  
+<br>`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`   
+<br>#Disable default Nginx host   
+`sudo unlink /etc/nginx/sites-enabled/default`   
+<br>#Test configuration for syntax errors   
+`sudo nginx -t`   
+<br>#Reload Nginx   
+`sudo systemctl reload nginx`  
 
-<br>Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your 
-<br>new server block works as expected:   
+<br>Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your new server block works as expected:   
 
 >`sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`
 <br>   
@@ -205,8 +189,7 @@ We would need to activate the configuration by linking to the config file from N
 <br>*Verifying nginx is serving projectlemp*   
 <br>
 
-Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your 
-<br>newly configured website.   
+Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.   
 <br>
 
 # **STEP 6 — TESTING PHP WITH NGINX** 
@@ -215,10 +198,12 @@ You can test the LEMP stack to validate that Nginx can correctly hand .php files
 You can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor: 
 >#create info.php
 <br>`sudo nano /var/www/projectlemp/info.php`
-<br>
-<br>#File content
-<br>`<?php`
-<br>`phpinfo();`   
+<br>   
+```
+#File content   
+<?php   
+phpinfo();
+```   
 
 <br>You can access the web page via the browser and will see detailed information about your server:
 
@@ -279,7 +264,7 @@ Next, we’ll create a test table named todo_list. From the MySQL console, run t
 
 Now you can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root 
 <br>directory using your preferred editor. We’ll use vi for that:
->nano /var/www/projectLEMP/todo_list.php   
+>`nano /var/www/projectLEMP/todo_list.php`   
 
 <br>The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list.
 <br>If there is a problem with the database connection, it will throw an exception.
