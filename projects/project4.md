@@ -290,10 +290,10 @@ app.controller('myCtrl', function($scope, $http) {
 <br>
 
 >#Change the directory back up to Books   
-`cd ..`   
-<br>
-Start the server by running this command:   
-`node server.js`   
+>`cd ..`   
+><br>
+>Start the server by running this command:   
+>`node server.js`   
 
 <br>
 
