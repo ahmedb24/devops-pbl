@@ -157,10 +157,10 @@ module.exports = function(app) {
 <br>
 
 >In the ‘apps’ folder, create a folder named models   
-`mkdir models && cd models`   
-<br>
-Create a file named book.js   
-`vi book.js`
+>`mkdir models && cd models`   
+><br>
+>Create a file named book.js   
+>`vi book.js`
 ```
 #Copy and paste the code below into ‘book.js’
 var mongoose = require('mongoose');
