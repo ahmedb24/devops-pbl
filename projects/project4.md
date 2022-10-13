@@ -182,13 +182,13 @@ module.exports = mongoose.model('Book', bookSchema);
 AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
 
 >#Change the directory back to ‘Books’   
-`cd ../..`   
-<br>
-#Create a folder named public   
-`mkdir public && cd public`   
-<br>
-#Add a file named script.js   
-`vi script.js`   
+>`cd ../..`   
+><br>
+>#Create a folder named public   
+>`mkdir public && cd public`   
+><br>
+>#Add a file named script.js   
+>`vi script.js`   
 ```
 #Copy and paste the Code below (controller configuration defined) into the script.js file.
 var app = angular.module('myApp', []);
