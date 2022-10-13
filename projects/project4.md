@@ -53,25 +53,25 @@ MongoDB stores data in flexible, JSON-like documents. Fields in a database can v
 >`echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
 
 >#Install MongoDB   
-`sudo apt install -y mongodb`
-<br>
-#Start the server   
-`sudo service mongodb start`   
-<br>
-#Verify that the service is up and running   
-`sudo systemctl status mongodb`   
-<br>
-#Create a folder named ‘Books’   
-`mkdir Books && cd Books`   
-<br>
-#In the Books directory, Initialize npm project   
-`npm init`   
-<br>
-#We need ‘body-parser’ package to help us process JSON files passed in requests to the server.   
-`sudo npm install body-parser`   
-<br>
-#Add a file to it named server.js   
-`vi server.js`
+>sudo apt install -y mongodb
+>
+>#Start the server   
+>`sudo service mongodb start`   
+>
+>#Verify that the service is up and running   
+>`sudo systemctl status mongodb`   
+><br>
+>#Create a folder named ‘Books’   
+>`mkdir Books && cd Books`   
+><br>
+>#In the Books directory, Initialize npm project   
+>`npm init`   
+><br>
+>#We need ‘body-parser’ package to help us process JSON files passed in requests to the server.   
+>`sudo npm install body-parser`   
+><br>
+>#Add a file to it named server.js   
+>`vi server.js`
 
 ```
 #Copy and paste the web server code below into the server.js file.
