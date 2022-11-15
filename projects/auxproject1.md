@@ -6,7 +6,7 @@ In this project we would onboard 20 new Linux users onto a server and create a s
 >#Create the project folder called Shell   
 >`mkdir Shell`   
 ><br>
->#Move into the Shell folder
+>#Move into the Shell folder   
 >`cd Shell`   
 ><br>
 >#Create a csv file name names.csv   
