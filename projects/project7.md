@@ -174,7 +174,7 @@ sudo systemctl enable php-fpm
 setsebool -P httpd_execmem 1
 ```
 
-### Repeat steps 1-5 for another 2 Web Servers.
+### Repeat the steps above for another 2 Web Servers.
 Verify that Apache files and directories are available on the Web Server in /var/www and also on the NFS server in /mnt/apps. If you see the same files – it means NFS is mounted correctly. You can try to create a new file touch test.txt from one server and check if the same file is accessible from other Web Servers.
 <br>
 
