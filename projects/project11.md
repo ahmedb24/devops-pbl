@@ -64,7 +64,7 @@ Clone down your ansible-config-mgt repo to your Jenkins-Ansible instance
 
 # **Step 4 - Begin Ansible development** 
 In your ansible-config-mgt GitHub repository, create a new branch that will be used for development of a new feature.   
-![created new branch](../screenshots/project11/created_new_branch.jpg)
+![created new branch](../screenshots/project11/created_new_branch.jpg)   
 *Created new branch*  
 <br>
 
