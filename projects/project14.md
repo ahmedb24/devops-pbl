@@ -695,3 +695,10 @@ Instance running
 Setup webhook  
 <br>
 
+## [LINK TO PIPELINE DEMO VIDEO](https://drive.google.com/file/d/1FrTacxH_1WhW_jsxy7T1BRkSPqFu2x6z/view?usp=sharing)
+<br>
+
+## [LINK TO ANSIBLE PROJECT REPO](https://github.com/ahmedb24/ansible-project)
+<br>
+
+## [LINK TO PHP APPLICATION REPO](https://github.com/ahmedb24/php-todo)
