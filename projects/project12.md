@@ -25,7 +25,7 @@ Change permissions to this directory, so Jenkins could save files here.
 <br>
 
 Go to Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin without restarting Jenkins.   
-![install artifact plugin](../screenshots/project12/install_artifact_plugin.jpg)
+![install artifact plugin](../screenshots/project12/install_artifact_plugin.jpg)   
 *Install artifact plugin*  
 <br>
 
