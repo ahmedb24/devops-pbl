@@ -196,6 +196,5 @@ You can go to each of the servers and check if wireshark has been installed by r
 ![verifying wireshark](../screenshots/project11/verifying_wireshark.jpg)
 *Verifying wireshark*  
 <br>
-
-### Congratulations   
-You have just automated your routine tasks by implementing your first Ansible project! There is more exciting projects ahead, so lets keep it moving!
+   
+We just automated some routine tasks by implementing a Ansible project!
