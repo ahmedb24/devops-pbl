@@ -117,7 +117,7 @@ After removing unnecessary directories and files, the roles structure should loo
 
 Update the inventory ansible-config/inventory/uat.yml file with IP addresses of the 2 UAT Webservers.
 ![update uat.yml](../screenshots/project12/update_uatyml.jpg)   
-*update uat.yml*  
+*Update uat.yml*  
 <br>
 
 In /etc/ansible/ansible.cfg file uncomment roles_path string and provide a full path to your roles directory roles_path = `/home/ubuntu/ansible-config/roles`, so Ansible could know where to find configured roles.   
