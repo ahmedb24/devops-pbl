@@ -606,7 +606,7 @@ Now, when SonarQube is up and running, it is time to setup our Quality gate in J
 
 * Configure Quality Gate Jenkins Webhook in SonarQube – The URL should point to your Jenkins server `http://{JENKINS_HOST}/sonarqube-webhook/`
   ![configure jenkins webhook](../screenshots/project14/configure_jenkins_webhook.jpg)
-  *configure jenkins webhook*  
+  *Configure jenkins webhook*  
   <br>
 
 * Setup SonarQube scanner from Jenkins – Global Tool Configuration
