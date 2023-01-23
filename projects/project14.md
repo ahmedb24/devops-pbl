@@ -377,7 +377,7 @@ stage('Code Analysis') {
   <br>
 
   ![app running after ansible project build](../screenshots/project14/app_running_after_build.jpg)
-  *app running after ansible project build*  
+  *App running after ansible project build*  
   <br>
 
   
