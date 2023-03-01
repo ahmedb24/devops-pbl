@@ -329,12 +329,12 @@ Create other records such as CNAME, alias and A records.
 *Create alias for subdomain*
 <br>
 
-![accessing tooling website via root domain](../screenshots/project15/tooling_via_root_domain.jpg)   
-*Accessing tooling website via root domain*
+![accessing wordpress website via root domain](../screenshots/project15/wordpress_via_rootdoamin.jpg)   
+*Accessing wordpress website via root domain*
 <br>
-
-![accessing wordpress website via subdomain](../screenshots/project15/wordpress_via_subdomain.jpg)   
+![accessing wordpress website via subdomain](../screenshots/project15/tooling_via_root_domain.jpg)   
 *Accessing wordpress website via subdomain*
 <br>
+
 
 
