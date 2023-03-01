@@ -320,21 +320,23 @@ Create other records such as CNAME, alias and A records.
 ![configure DNS](../screenshots/project15/configure_dns.jpg)   
 *Configure DNS*
 <br>
+<br>
 
 ![create alias for root](../screenshots/project15/create_alias_for_root.jpg)   
 *Create alias for root*
+<br>
 <br>
 
 ![create alias for subdomain](../screenshots/project15/create_alias_for_subdomain.jpg)   
 *Create alias for subdomain*
 <br>
+<br>
 
 ![accessing wordpress website via root domain](../screenshots/project15/wordpress_via_rootdoamin.jpg)   
 *Accessing wordpress website via root domain*
 <br>
-![accessing wordpress website via subdomain](../screenshots/project15/tooling_via_root_domain.jpg)   
-*Accessing wordpress website via subdomain*
 <br>
 
-
-
+![accessing wordpress website via subdomain](../screenshots/project15/tooling_via_root_domain.jpg)   
+*Accessing tooling website via subdomain*
+<br>
