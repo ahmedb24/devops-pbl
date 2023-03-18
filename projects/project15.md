@@ -1,9 +1,9 @@
 # **AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY**
 We will build a secure infrastructure inside AWS VPC (Virtual Private Cloud) network for a fictitious company (Choose an interesting name for it) that uses WordPress CMS for its main business website, and a Tooling Website (https://github.com/<your-name>/tooling) for their DevOps team. As part of the company’s desire for improved security and performance, a decision has been made to use a reverse proxy technology from NGINX to achieve this.
 
-![solution architecture](../screenshots/project15/architecture.png)   
-*Solution architecture*  
-<br>
+  ![solution architecture](../screenshots/project15/architecture.png)   
+  *Solution architecture*  
+  <br>
 
 # **Step 1 - Preparing prerequisites** 
 ### Properly configure your AWS account and Organization Unit [Watch How To Do This Here](https://youtu.be/9PQYCc_20-Q)
