@@ -334,7 +334,7 @@ At this point, you shall have pretty much all infrastructure elements ready to b
 * we have a long list of files which may looks confusing but that is not bad for a start, we are going to fix this using the concepts of modules in the upcoming project
 * Secondly, our application wont work becuase in out shell script that was passed into the launch some endpoints like the RDs and EFS point is needed in which they have not been created yet. So in an upcoming project, we will use our Ansible knowledge to fix this.
 
-Try to plan and apply your Terraform codes, explore the resources in AWS console and make sure you destroy them right away to avoid massive costs.
+Try to plan and apply your Terraform codes, explore the resources in AWS console and make sure you destroy them right away to avoid massive costs.   
 ![terraform destroy](../screenshots/project17/terraform_destroy.jpg)   
 *Terraform destroy*  
 <br>
