@@ -1,4 +1,4 @@
-# **MIGRATION TO THE СLOUD WITH CONTAINERIZATION. PART 1 – DOCKER & DOCKER COMPOSE**
+git# **MIGRATION TO THE СLOUD WITH CONTAINERIZATION. PART 1 – DOCKER & DOCKER COMPOSE**
 
 # **Step 1 - Install Docker and prepare for migration to the Cloud** 
 First, we need to install Docker Engine, which is a client-server application that contains:

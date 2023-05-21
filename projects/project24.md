@@ -4,7 +4,7 @@
 ### Use Terraform version v1.0.2 and kubectl version v1.23.6
 <br>
 
-Open up a new directory on your laptop, and name it eks
+Open up a new directory on your laptop, and name it terraform-eks
 ![open directory](../screenshots/project23/open_directory.jpg)   
 *Open directory*  
 <br>
